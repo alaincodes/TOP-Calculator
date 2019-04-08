@@ -1,0 +1,66 @@
+/* Simple CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Personnnnal Styling below */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(6, 50px); 
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  border: 1px solid black;
+  padding: 1em;
+  margin-top: 2em;
+  border-radius: 5px;
+}
+
+.displayScreen {
+  grid-column-start: span 4;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.displayScreen > p {
+  display: flex;
+  align-items: center;
+  padding-right: 1em;
+}
+
+.brandIcon {
+  grid-column: span 2;
+}
+
+.btn-clear {
+  grid-column: span 2;
+}
+
+button {
+  border-color: red;
+  border-radius: 5px;
+  cursor: crosshair;
+}
